@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://plumb-35.elghaly.dev/sitemap.xml
