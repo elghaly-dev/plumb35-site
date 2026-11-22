@@ -32,7 +32,7 @@ BANNED = re.compile(r"\b(free|safe|safety|AI)\b", re.I)
 # The check fails on any hit above these numbers, so nothing new gets in.
 # Remove entries as the copy is fixed.
 FOOTER_ENFORCED = False  # flip to True once the footer PRs (plain name + address) are merged
-BANNED_BASELINE = {"ar/index.html": {"ai": 1}, "index.html": {"ai": 1}, "quay/index.html": {"free": 3}, "ru/index.html": {"ai": 1}, "zh/index.html": {"ai": 1}}
+BANNED_BASELINE = {"quay/index.html": {"free": 3}}  # quay is on hold; its copy is not swept yet
 
 SKIP = {".git", ".github", "tools", "fonts", "assets"}
 EXEMPT_FRAGMENTS = (
