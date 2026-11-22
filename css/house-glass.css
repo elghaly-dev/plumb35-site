@@ -1427,3 +1427,13 @@ a.btn:focus-visible {
 .lic-badges > span {
   text-decoration: none;
 }
+
+/* Kamino on-chain records: one card per transaction, each with its Solscan signature. */
+.kamino-cards{list-style:none;margin:var(--space-md) 0 0;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.kamino-card{display:flex;flex-direction:column;gap:6px;padding:16px;border:1px solid var(--line,rgba(255,255,255,.12));border-radius:14px;background:rgba(255,255,255,.02)}
+.kamino-card p{margin:0}
+.kamino-card__date{font-weight:600;font-variant-numeric:tabular-nums}
+.kamino-card__what{opacity:.85;font-variant-numeric:tabular-nums}
+.kamino-card__sig code{font-size:.85em;opacity:.75;overflow-wrap:anywhere}
+.kamino-card__link{margin-top:auto;align-self:flex-start}
+.kamino-note{margin-top:10px}
