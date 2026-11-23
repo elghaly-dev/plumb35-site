@@ -1,0 +1,6 @@
+.footer-social{margin:18px auto 0;text-align:center}
+.fsoc-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.fsoc{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;color:#c4a1ec;background:rgba(196,161,236,.08);border:1px solid rgba(196,161,236,.35);transition:transform .15s,background .15s,border-color .15s,color .15s}
+.fsoc svg{width:20px;height:20px}
+.fsoc:hover,.fsoc:focus-visible{color:#fff;background:rgba(196,161,236,.22);border-color:#c4a1ec;transform:translateY(-2px);outline:none}
+.fsoc-addr{margin:12px 0 0;text-align:center;font-size:11px;letter-spacing:.12em;color:#94a3b8}
