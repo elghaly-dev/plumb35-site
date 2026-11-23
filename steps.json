@@ -1,0 +1,40 @@
+{
+  "sample": true,
+  "note": "Sample entries for layout review. Real on-chain data is wired later, reading from the network.",
+  "steps": [
+    {
+      "time": "2026-07-17T09:14Z",
+      "chain": "Solana",
+      "hops": [
+        "Kamino",
+        "Jupiter",
+        "Orca"
+      ],
+      "stage": "Confirmed",
+      "reason": null,
+      "signature": null
+    },
+    {
+      "time": "2026-07-21T13:02Z",
+      "chain": "Solana",
+      "hops": [
+        "Kamino",
+        "Raydium"
+      ],
+      "stage": "Refused",
+      "reason": "Quote moved past the slippage band before the send stage.",
+      "signature": null
+    },
+    {
+      "time": "2026-07-22T18:41Z",
+      "chain": "Arbitrum",
+      "hops": [
+        "Camelot",
+        "Uniswap v3"
+      ],
+      "stage": "Simulate",
+      "reason": "Waiting on a fresh quote.",
+      "signature": null
+    }
+  ]
+}
