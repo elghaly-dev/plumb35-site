@@ -187,6 +187,26 @@ else if(typeof window.PLUMB_PAGE_LANG==='string'&&/^(en|ar|ru|zh)$/.test(window.
 <link rel="alternate" hreflang="x-default" href="https://plumb-35.elghaly.dev/"/>
 
 <style>
+  .oc { margin: 56px auto 0; max-width: 920px; padding: 0 20px; }
+  .oc h2 { font-family: Georgia, 'Times New Roman', serif; color: #c4a1ec; font-weight: 500; margin: 0 0 6px; font-size: clamp(1.15rem, 4.6vw, 1.5rem); }
+  .oc__sub { color: #a39b88; margin: 0 0 22px; font-size: .92rem; }
+  .oc-flag { color: #a39b88; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 14px; }
+  #onchain-list { display: grid; gap: 14px; }
+  .oc-card { border: 1px solid rgba(196,161,236,.32); background: rgba(16,19,31,.62); backdrop-filter: blur(8px);
+             border-radius: 14px; padding: 14px 16px; color: #efe8d8; }
+  .oc-top { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-bottom: 8px; }
+  .oc-stage { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px;
+              border: 1px solid rgba(196,161,236,.45); color: #e6d4fa; }
+  .oc-stage--refused { border-color: rgba(214,120,120,.6); color: #e7b3b3; }
+  .oc-stage--confirmed { border-color: rgba(52,184,172,.55); color: #9fe3da; }
+  .oc-chain { font-size: .78rem; color: #c4a1ec; }
+  .oc-time { margin-left: auto; font-size: .76rem; color: #a39b88; }
+  .oc-hops { margin: 0 0 6px; font-size: .95rem; line-height: 1.6; }
+  .oc-reason { margin: 0 0 6px; font-size: .88rem; color: #cbbfae; }
+  .oc-foot { display: flex; justify-content: flex-end; }
+  .oc-sig { font-family: ui-monospace, monospace; font-size: .8rem; color: #c4a1ec; text-decoration: none; border-bottom: 1px solid rgba(196,161,236,.4); }
+  .oc-sig--none { color: #6e6a63; border: 0; }
+  @media (max-width: 520px) { .oc-time { margin-left: 0; width: 100%; } .oc-card { padding: 13px 14px; } }
 /* ported verbatim from elghaly.dev EN */
 :root {
   --night: #07080c;
@@ -781,6 +801,12 @@ else if(typeof window.PLUMB_PAGE_LANG==='string'&&/^(en|ar|ru|zh)$/.test(window.
     </figure>
   </section>
 
+  <section class="oc" aria-labelledby="oc-title">
+  <h2 id="oc-title">On-chain steps</h2>
+  <p class="oc__sub">What the bots did on the network, step by step.</p>
+  <div id="onchain-list"></div>
+</section>
+<script src="assets/onchain-steps.js" defer></script>
   <h1 class="mark" lang="en" dir="ltr">elghaly</h1>
 <p class="signs" aria-hidden="true">✝️ 🧿 🪬</p>
 <hr class="rule">
