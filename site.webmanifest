@@ -4,8 +4,8 @@
   "description": "Self-hosted Solana desk software. Controlled from a private chat on your phone, Jupiter routes, ready in 5–7 days.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#050505",
-  "theme_color": "#050505",
+  "background_color": "#07080c",
+  "theme_color": "#07080c",
   "icons": [
     { "src": "favicon.png", "sizes": "32x32", "type": "image/png" },
     { "src": "logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }

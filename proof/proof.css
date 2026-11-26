@@ -1,5 +1,5 @@
 :root{
-  --bg:#050505;
+  --bg:#07080c;
   --bg-soft:#0c0c0e;
   --surface:#111113;
   --ink:#f5f5f7;
@@ -24,7 +24,10 @@ html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
 body{
   font-family:var(--sans);
   font-size:16px;
-  background:var(--bg);
+  background:
+    radial-gradient(120% 60% at 50% -10%, rgba(42, 76, 179, .30), transparent 60%),
+    radial-gradient(80% 50% at 50% 110%, rgba(196, 161, 236, .10), transparent 70%),
+    var(--bg);
   color:var(--ink);
   line-height:1.6;
   min-height:100vh;
