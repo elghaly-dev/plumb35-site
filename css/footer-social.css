@@ -4,3 +4,4 @@
 .fsoc svg{width:20px;height:20px}
 .fsoc:hover,.fsoc:focus-visible{color:#fff;background:rgba(196,161,236,.22);border-color:#c4a1ec;transform:translateY(-2px);outline:none}
 .fsoc-addr{margin:12px 0 0;text-align:center;font-size:11px;letter-spacing:.12em;color:#94a3b8}
+@media (max-width:420px){.fsoc-row{flex-wrap:nowrap;gap:8px}.fsoc{width:36px;height:36px;border-radius:11px;flex:0 0 auto}.fsoc svg{width:18px;height:18px}}
