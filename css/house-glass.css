@@ -1186,7 +1186,7 @@ footer .love{
   .site-nav{display:none}
   .brand-plate-inner{grid-template-columns:1fr;gap:var(--space-md);padding:var(--space-sm)}
   .mobile-cta{display:flex}
-  body{padding-bottom:72px}
+  body{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
   .to-top{display:none}
 }
 @media(max-width:600px){
